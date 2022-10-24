@@ -1,43 +1,56 @@
 <template>
     <div id="app">
-        <h1> Todo application</h1>
-        <AddTodo
-        @add-todo="addTodo"
+        <h1> What to cook application</h1>
+        <NewDish
+                @add-new-dish="addNewDish"
         />
         <hr>
-        <TodoList
-                v-bind:todos="todos"
-                @remove-todo="removeTodo"
+        <DishesList
+                class="dishes_list-container"
+                v-bind:dishes="dishes"
+                @remove-dish="removeDish"
+        />
+        <MenuGenerator
+                @generate="generateMenu"
         />
     </div>
 
 </template>
 
 <script>
-    import TodoList from '@/components/TodoList'
-    import AddTodo from '@/components/AddTodo'
+    import DishesList from '@/components/DishesList'
+    import NewDish from '@/components/NewDish'
+    import Dishes from "../cookService"
+    import MenuGenerator from '@/components/MenuGenerator';
 
     export default {
         name: 'App',
         data() {
-            return {
-                todos: [
-                    {id: 1, title: 'Купить хлеб', completed: false},
-                    {id: 2, title: 'Купить масло', completed: false},
-                    {id: 3, title: 'Купить батон', completed: false}
-                ],
-            }
+            let result = {
+                dishes: [],
+                service: new Dishes(),
+            };
+            return result
         },
         methods: {
-            removeTodo(id) {
-                this.todos = this.todos.filter(t => t.id !== id)
+            removeDish(id) {
+                this.service.deleteDish(id);
+                this.service.getDishesList().then(list => this.dishes = list);
             },
-            addTodo(todo) {
-                this.todos.push(todo)
+            addNewDish(dish) {
+                this.service.addDish(dish);
+                this.service.getDishesList().then(list => this.dishes = list);
+            },
+            generateMenu(amount){
+                alert(amount)
             }
         },
+
+        mounted() {
+            this.service.getDishesList().then(list => this.dishes = list);
+        },
         components: {
-            TodoList, AddTodo
+            DishesList, NewDish, MenuGenerator
         }
     }
 </script>
@@ -50,5 +63,10 @@
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
+    }
+    .dishes_list-container {
+        margin: 10px auto;
+        width: 100%;
+        max-width: 500px;
     }
 </style>

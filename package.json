@@ -5,11 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "",
+    "start": "nodemon cook_server.js localhost 3000"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "express": "^4.16.2",
+    "body-parser": "^1.18.2",
+    "file-system": "^2.2.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.19.0",
+    "shortid": "^2.2.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
