@@ -1,16 +1,210 @@
-[{"id":"Ev5cMLMEr",
-"title":"Драники по-белорусски",
-"amount":5,
-"disabled":false},
-{"id":"ELMK7S4T4",
-"title":"Борщ украинский",
-"amount":3,
-"disabled":false},
-{"id":"wwBWHIGhv",
-"title":"Уха",
-"amount":3,
-"disabled":false},
-{"id":"Ej8DtUsEB",
-"title":"Пюре картофельное",
-"amount":2,
-"disabled":false}]
+[
+  {
+    "id": "YUcaAe0oC",
+    "title": "Борщ",
+    "category": "Первые блюда",
+    "description": "пиу",
+    "amount": 4,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch"
+    ]
+  },
+  {
+    "id": "n7NpPJuTi",
+    "title": "Оладушки",
+    "category": "Выпечка",
+    "description": "",
+    "amount": 2,
+    "disabled": false,
+    "selectedMeals": [
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "PMn8LQ0cV",
+    "title": "Харчо",
+    "category": "Первые блюда",
+    "description": "",
+    "amount": 2,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch"
+    ]
+  },
+  {
+    "id": "W2aemDW9w",
+    "title": "Пюре",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 2,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "pD_vwvHCh",
+    "title": "Творожок",
+    "category": "Десерты",
+    "description": "",
+    "amount": 1,
+    "disabled": false,
+    "selectedMeals": [
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "gmdg5-qPw",
+    "title": "сок",
+    "category": "Напитки",
+    "description": "",
+    "amount": 1,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "MVe9frYPZ",
+    "title": "Сырники",
+    "category": "Десерты",
+    "description": "",
+    "amount": 2,
+    "disabled": false,
+    "selectedMeals": [
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "HhHJp135X",
+    "title": "Щавелевый суп",
+    "category": "Первые блюда",
+    "description": "",
+    "amount": 4,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch"
+    ]
+  },
+  {
+    "id": "fuNPgZ-hS",
+    "title": "Компот из винограда и яблок",
+    "category": "Напитки",
+    "description": "",
+    "amount": 6,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "feY_PKmbt",
+    "title": "Гречневая каша",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 2,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "dinner"
+    ]
+  },
+  {
+    "id": "cJgKOOqw7",
+    "title": "Рисовая каша",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 2,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "3BT7mDt9i",
+    "title": "Круассаны",
+    "category": "Выпечка",
+    "description": "",
+    "amount": 6,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "iV31rRuZ1",
+    "title": "Кексы с шоколадом",
+    "category": "Выпечка",
+    "description": "",
+    "amount": 12,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch",
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "REBOym0Da",
+    "title": "Пюре карт.",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 1,
+    "disabled": false
+  },
+  {
+    "id": "eNOvu3e3o",
+    "title": "Котлеты куриные",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 6,
+    "disabled": false
+  },
+  {
+    "id": "f7W_eJ090",
+    "title": "Хрен",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 1,
+    "disabled": false,
+    "selectedMeals": [
+      "breakfast"
+    ]
+  },
+  {
+    "id": "a-Kb232Fr",
+    "title": "Хрен",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 1,
+    "disabled": false,
+    "selectedMeals": [
+      "breakfast",
+      "dinner"
+    ]
+  },
+  {
+    "id": "kN6_NdYhP",
+    "title": "Щи",
+    "category": "Вторые блюда",
+    "description": "",
+    "amount": 4,
+    "disabled": false,
+    "selectedMeals": [
+      "lunch"
+    ]
+  }
+]
